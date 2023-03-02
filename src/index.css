@@ -9,3 +9,6 @@
 .urbanist {
   font-family: Urbanist;
 }
+body::-webkit-scrollbar {
+  display: none;
+}

@@ -1,6 +1,6 @@
 export default function DashboardCourse(props) {
   return (
-    <div className="border-y-4 border-fuchsia-400 bg-gray-800 p-3 w-full md:w-1/3 rounded-md">
+    <div className="border-y-4 border-fuchsia-400 bg-gray-800 p-6 py-3 md:mr-8  w-full md:w-1/3 rounded-md">
       <h1 className="open-sans font-bold text-gray-50 text-lg">
         {props.title}
       </h1>

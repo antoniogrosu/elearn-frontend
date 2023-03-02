@@ -1,4 +1,16 @@
+import { data } from "../../../DUMMY_DATA";
+
 export default function Stats() {
+  const object = data.stats;
+  const courseStats = object.map((item) => {
+    return (
+      <p className="mb-4 px-4 py-2 rounded-md text-gray-50 bg-gray-800 open-sans text-sm">
+        You completed {item.chapters} chapters in{" "}
+        <span className="font-semibold">{item.course}</span>
+      </p>
+    );
+  });
+
   return (
     <div>
       <h1 className="w-2/4 text-gray-50 text-2xl urbanist font-semibold">
@@ -8,16 +20,7 @@ export default function Stats() {
         this week
       </p>
       <div className="flex items-start justify-start md:flex-row flex-col-reverse w-full mt-6">
-        <div className="flex flex-col">
-          <p className="px-4 py-2 rounded-md text-gray-50 bg-gray-800 open-sans text-sm">
-            You completed 3 chapters in{" "}
-            <span className="font-semibold">Phyton Basics </span>
-          </p>
-          <p className="mt-4 px-4 py-2 rounded-md text-gray-50 bg-gray-800 open-sans text-sm">
-            You completed 3 chapters in{" "}
-            <span className="font-semibold">Phyton Basics </span>
-          </p>
-        </div>
+        <div className="flex flex-col">{courseStats}</div>
         <div className="md:ml-16 mb-6 md:mb-0 w-full md:w-2/4 p-6 bg-gradient-to-tr from-purple-800/5 to-fuchsia-400/5 flex flex-col rounded-2xl">
           <h1 className="text-md text-gray-50 open-sans font-semibold">
             19 Hours Spent on Learning

@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 export default function FullCourse(props) {
   return (
-    <div className="bg-gray-800 p-6 w-full md:w-1/3 border-y-4 border-fuchsia-400 rounded-md">
+    <div className="bg-gray-800 p-6 w-full md:w-1/3 border-y-4 border-fuchsia-400 rounded-md md:mr-16">
       <h1 className="open-sans font-bold text-gray-50 text-lg">
         {props.title}
       </h1>

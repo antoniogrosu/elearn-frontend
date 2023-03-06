@@ -25,7 +25,7 @@ export default function Stats() {
           <h1 className="text-md text-gray-50 open-sans font-semibold">
             19 Hours Spent on Learning
           </h1>
-          <div className="max-md w-full flex justify-between mt-2">
+          <div className="max-w-md w-full flex justify-between mt-2">
             <div className="bg-purple-800 w-7/12 p-1 rounded-l-full"></div>
             <div className="bg-fuchsia-400 w-5/12 p-1 rounded-r-full"></div>
           </div>

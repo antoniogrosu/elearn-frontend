@@ -4,7 +4,7 @@ import { data } from "../../../DUMMY_DATA";
 export default function Suggestion() {
   const object = data.promotion;
   return (
-    <div className="w-full max-w-md md:w-10/12 2xl:w-4/12 bg-gradient-to-r from-purple-800 to-fuchsia-400 p-6 md:p-8 rounded-2xl flex md:flex-row flex-col items-start justify-around ">
+    <div className="w-full max-w-2xl md:w-10/12 2xl:w-4/12 bg-gradient-to-r from-purple-800 to-fuchsia-400 p-6 md:p-8 rounded-2xl flex md:flex-row flex-col items-start justify-around ">
       <div className="w-full md:w-4/12">
         <h1 className="text-gray-50 urbanist font-bold text-2xl">
           Do you want to take it to the next level?

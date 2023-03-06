@@ -1,4 +1,3 @@
-import DashboardCourse from "./DashboardCourse";
 import DashboardCoursesComp from "./DashboardCoursesComp";
 import DashboardStatisticsComp from "./DashboardStatisticsComp";
 import DashboardTaskComp from "./DashboardTasksComp";

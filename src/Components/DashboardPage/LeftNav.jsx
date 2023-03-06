@@ -9,7 +9,7 @@ export default function LeftNav() {
       <h1 className="open-sans text-gray-50 font-bold text-2xl">
         <Link to="/">Elearn.</Link>
       </h1>
-      <div className=" h-3/4 flex flex-col justify-between mt-8">
+      <div className="max-h-min h-80 flex flex-col justify-between mt-8">
         <div className="w-full flex items-center">
           <div className="rounded-full w-16 h-16 p-1">
             <img src={profilePic} />

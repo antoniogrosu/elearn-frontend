@@ -1,6 +1,6 @@
 export default function DashboardCourse(props) {
   return (
-    <div className="mb-6  md:mb-0 border-y-4 border-fuchsia-400 bg-gray-800 p-6 py-3 md:mr-8  w-full md:w-1/3 rounded-md">
+    <div className="mb-6  md:mb-0 border-y-4 border-fuchsia-400 bg-gray-800 p-4 md:mr-8 max-w-md  md:w-1/3 rounded-md">
       <h1 className="open-sans font-bold text-gray-50 text-lg">
         {props.title}
       </h1>
@@ -10,7 +10,7 @@ export default function DashboardCourse(props) {
       <div className="w-full open-sans text-gray-50 text-xs font-semibold bg-slate-500 p-2 rounded-md mt-4">
         Next lesson : {props.lesson}
       </div>
-      <div className="w-full mt-2">
+      <div className="w-full mt-4">
         <p className="text-xs text-gray-50 open-sans opacity-50">
           50% complete
         </p>

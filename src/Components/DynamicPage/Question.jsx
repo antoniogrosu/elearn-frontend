@@ -16,15 +16,12 @@ export default function Question(props) {
         </p>
       </div>
       <div className="text-sm w-full flex md:flex-row flex-col justify-between md:items-center">
-        <input type="radio" className="fixed w-96 bg-red-200" />
         <label className="md:mr-2 inline-block bg-gray-900 px-4 py-2 mb-5 md:mb-0 text-gray-50 bg-opacity-60  rounded-md">
           {obj.chapters[3].lessons[2].choices[0]}
         </label>
-        <input type="radio" className="fixed opacity-0" />
         <label className="md:mr-2 inline-block bg-gray-900 px-4 py-2 mb-5 md:mb-0 text-gray-50 bg-opacity-60  rounded-md">
           {obj.chapters[3].lessons[2].choices[1]}
         </label>
-        <input type="radio" className="fixed opacity-0" />
         <label className="inline-block bg-gray-900 px-4 py-2 mb-5 md:mb-0 text-gray-50 bg-opacity-60 rounded-md">
           {obj.chapters[3].lessons[2].choices[2]}
         </label>

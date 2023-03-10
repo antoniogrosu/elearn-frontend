@@ -1,6 +1,7 @@
 import HeroTitle from "./HeroTitle";
 import BlobBut from "./BlobBut";
 import SocialProof from "./SocialProof";
+import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <div className="bg-gray-900 flex flex-col items-center md:flex-row md:justify-start pb-40">

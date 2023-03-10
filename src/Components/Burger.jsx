@@ -38,7 +38,7 @@ export default function Burger() {
                 </p>
               </div>
             </div>
-            <div className="w-full h-52 flex flex-col justify-around mt-16">
+            <div className="w-full h-64 flex flex-col justify-around mt-16">
               <div>
                 <p className="text-gray-50 text-sm urbanist font-semibold mb-2">
                   New Learner
@@ -50,29 +50,31 @@ export default function Burger() {
                   50% to Experienced Learner
                 </p>
               </div>
-              <Link to="/dashboard">
-                <p className="text-md urbanist font-semibold text-gray-50 ">
-                  Dashboard
-                </p>
-              </Link>
-              <Link to="/courses">
-                <p className="text-md urbanist font-semibold text-gray-50 ">
-                  Courses
-                </p>
-              </Link>
+              <div className="border-y-2 border-gray-50/50 py-4 flex flex-col justify-between h-24">
+                <Link to="/dashboard">
+                  <p className=" text-sm urbanist font-semibold text-gray-50 ">
+                    Dashboard
+                  </p>
+                </Link>
+                <Link to="/courses">
+                  <p className="text-sm urbanist font-semibold text-gray-50 ">
+                    Courses
+                  </p>
+                </Link>
+              </div>
             </div>
             <div className="mt-16">
-              <p className="text-gray-50 text-md urbanist font-semibold mb-4">
+              <p className="text-gray-50 text-sm urbanist font-semibold mb-4">
                 Personal{" "}
               </p>
               <div className="flex justify-start">
-                <div className="w-12 h-12 p-2 rounded-md bg-slate-300 cursor-pointer flex items-center justify-center mr-4 opacity-50">
+                <div className="w-8 h-8 p-2 rounded-md bg-slate-300 cursor-pointer flex items-center justify-center mr-4 opacity-50">
                   <img src={ProgressIcon} className="w-full" />
                 </div>
-                <div className="w-12 h-12 p-2 rounded-md bg-slate-300 cursor-pointer flex items-center justify-center mr-4 opacity-50">
+                <div className="w-8 h-8 p-2 rounded-md bg-slate-300 cursor-pointer flex items-center justify-center mr-4 opacity-50">
                   <img src={SettingsIcon} className="w-full" />
                 </div>
-                <div className=" w-12 h-12 p-2 rounded-md bg-slate-300 cursor-pointer flex items-center justify-center opacity-50">
+                <div className=" w-8 h-8 p-2 rounded-md bg-slate-300 cursor-pointer flex items-center justify-center opacity-50">
                   <img src={SkillsIcon} className="w-full" />
                 </div>
               </div>

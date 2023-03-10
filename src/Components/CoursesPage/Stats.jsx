@@ -1,6 +1,11 @@
 import { data } from "../../../DUMMY_DATA";
-
+import { useInView } from "framer-motion";
+import { motion } from "framer-motion";
 export default function Stats() {
+  const { ref, inView } = useInView({
+    threshold: 0.5, // change this to adjust when the animation triggers
+    triggerOnce: true, // change this to trigger the animation multiple times
+  });
   const object = data.stats;
   const courseStats = object.map((item) => {
     return (
@@ -21,6 +26,7 @@ export default function Stats() {
       </p>
       <div className="flex items-start justify-start md:flex-row flex-col-reverse w-full mt-6">
         <div className="flex flex-col">{courseStats}</div>
+
         <div className="md:ml-16 mb-6 md:mb-0 w-full md:w-2/4 p-6 bg-gradient-to-tr from-purple-800/5 to-fuchsia-400/5 flex flex-col rounded-2xl">
           <h1 className="text-md text-gray-50 open-sans font-semibold">
             19 Hours Spent on Learning

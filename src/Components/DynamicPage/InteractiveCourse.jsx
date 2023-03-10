@@ -1,11 +1,23 @@
 import Question from "./Question";
 import { data } from "../../../DUMMY_DATA";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function InteractiveCourse(props) {
+  const { ref, inView } = useInView({
+    threshold: 0.5, // change this to adjust when the animation triggers
+    triggerOnce: true, // change this to trigger the animation multiple times
+  });
   const arr = data.courses;
   const index = arr.findIndex((item) => item.id === props.id);
   return (
-    <div className="w-full flex flex-col md:flex-row justify-start mt-24 bg-gradient-to-r from-purple-800 to-fuchsia-400 rounded-3xl">
+    <motion.div
+      className="w-full flex flex-col md:flex-row justify-start mt-24 bg-gradient-to-r from-purple-800 to-fuchsia-400 rounded-3xl"
+      ref={ref}
+      initial={{ opacity: 0, y: 10 }}
+      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="w-full md:w-3/12 rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none bg-teal-100 bg-opacity-40 pt-6 px-6 py-4 md:py-12">
         <h1 className="text-lg urbanist font-bold text-gray-50">Chapter III</h1>
         <h3 className="urbanist text-sm font-semibold mt-2 text-gray-50">
@@ -28,6 +40,6 @@ export default function InteractiveCourse(props) {
       <div className="w-full px-6 md:w-9/12 md:px-16 py-8 bg-gradient-to-r from-purple-800 to-fuchsia-400 rounded-bl-3xl md:rounded-bl-none rounded-r-3xl">
         <Question arr={arr} index={index} />
       </div>
-    </div>
+    </motion.div>
   );
 }

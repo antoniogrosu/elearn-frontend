@@ -1,8 +1,15 @@
 import FullCourse from "./FullCourse";
 import author2 from "/Author2.svg";
 import { data } from "../../../DUMMY_DATA";
+import { useInView } from "framer-motion";
+import { motion } from "framer-motion";
+
 export default function Suggestion() {
   const object = data.promotion;
+  const { ref, inView } = useInView({
+    threshold: 0.5, // change this to adjust when the animation triggers
+    triggerOnce: true, // change this to trigger the animation multiple times
+  });
   return (
     <div className="w-full max-w-2xl md:w-10/12 2xl:w-4/12 bg-gradient-to-r from-purple-800 to-fuchsia-400 p-6 md:p-8 rounded-2xl flex md:flex-row flex-col items-start justify-around ">
       <div className="w-full md:w-4/12">

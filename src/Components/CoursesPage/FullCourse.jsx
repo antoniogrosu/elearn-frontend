@@ -21,10 +21,10 @@ export default function FullCourse(props) {
       </div>
       <div className="w-full mt-4">
         <p className="text-xs text-gray-50 open-sans opacity-50 mb-1">
-          50% complete
+          75% complete
         </p>
         <div className="w-full bg-gray-900 rounded-full">
-          <div className="w-1/2 h-full bg-gradient-to-r from-teal-100 pb-1 rounded-full"></div>
+          <div className="w-3/4 h-full bg-gradient-to-r from-teal-100 pb-1 rounded-full"></div>
         </div>
         <p className="text-xs text-gray-50 open-sans mt-1 open-sans">
           <span className="opacity-50">Duration</span> :{" "}

@@ -38,9 +38,9 @@ export default function Burger() {
                 </p>
               </div>
             </div>
-            <div className="w-full h-60 flex flex-col justify-around mt-16">
+            <div className="w-full h-52 flex flex-col justify-around mt-16">
               <div>
-                <p className="text-gray-50 text-md urbanist font-semibold mb-2">
+                <p className="text-gray-50 text-sm urbanist font-semibold mb-2">
                   New Learner
                 </p>
                 <div className="w-full bg-gray-900 rounded-full">
@@ -66,13 +66,13 @@ export default function Burger() {
                 Personal{" "}
               </p>
               <div className="flex justify-start">
-                <div className="w-12 h-12 p-3 rounded-md bg-slate-300 cursor-pointer flex items-center justify-center mr-4 opacity-50">
+                <div className="w-12 h-12 p-2 rounded-md bg-slate-300 cursor-pointer flex items-center justify-center mr-4 opacity-50">
                   <img src={ProgressIcon} className="w-full" />
                 </div>
-                <div className="w-12 h-12 p-3 rounded-md bg-slate-300 cursor-pointer flex items-center justify-center mr-4 opacity-50">
+                <div className="w-12 h-12 p-2 rounded-md bg-slate-300 cursor-pointer flex items-center justify-center mr-4 opacity-50">
                   <img src={SettingsIcon} className="w-full" />
                 </div>
-                <div className=" w-12 h-12 p-3 rounded-md bg-slate-300 cursor-pointer flex items-center justify-center opacity-50">
+                <div className=" w-12 h-12 p-2 rounded-md bg-slate-300 cursor-pointer flex items-center justify-center opacity-50">
                   <img src={SkillsIcon} className="w-full" />
                 </div>
               </div>

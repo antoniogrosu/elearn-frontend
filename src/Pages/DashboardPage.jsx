@@ -6,7 +6,7 @@ import Footer from "../Components/Footer";
 export default function DashboardPage() {
   return (
     <>
-      <div className="md:hidden">
+      <div className="md:hidden select-none">
         <Navbar />
       </div>
       <div className="bg-gray-900 flex justify-start h-screen">

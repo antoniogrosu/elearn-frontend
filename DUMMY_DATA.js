@@ -8,6 +8,27 @@ export const data = {
       author: "Magnus Thunderbolt",
       lesson: "For Loops",
       duration: "8h",
+      chapters: [
+        { lessons: ["A lesson", "A second lesson"] },
+        { lessons: ["A lesson", "A second lesson"] },
+        { lessons: ["A lesson", "A second lesson"] },
+        {
+          lessons: [
+            "A lesson",
+            "A second lesson",
+            {
+              title: "For loops",
+              question:
+                "Which one of the following represents the correct way of writing a for loop in Python 3?",
+              choices: [
+                "for x in range: \n print x",
+                "for( int i=1; i<=n; i++ ) \n { \n cout<<i; \n }",
+                "for( let i=1; i<=n; i++ ) \n { \n console.log(i); \n }",
+              ],
+            },
+          ],
+        },
+      ],
     },
     {
       id: "copy-writing",
@@ -17,6 +38,27 @@ export const data = {
       author: "Lyla Rosewood",
       lesson: "Powerful Words",
       duration: "2h",
+      chapters: [
+        { lessons: ["A lesson", "A second lesson"] },
+        { lessons: ["A lesson", "A second lesson"] },
+        { lessons: ["A lesson", "A second lesson"] },
+        {
+          lessons: [
+            "A lesson",
+            "A second lesson",
+            {
+              title: "Powerful Words",
+              question:
+                "Which one these combinations of words would you use to describe a digital product",
+              choices: [
+                "well engineered software",
+                "useful software",
+                "all your solutions and answers in a software",
+              ],
+            },
+          ],
+        },
+      ],
     },
   ],
   promotion: {

@@ -13,7 +13,7 @@ export default function CoursePage() {
     <>
       <Navbar />
       {index != -1 ? (
-        <CourseDynamic object={array[index]} />
+        <CourseDynamic object={array[index]} id={id} />
       ) : (
         <NotFound id={id} />
       )}
